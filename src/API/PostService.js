@@ -10,4 +10,9 @@ export default class PostService  {
             }
         });
     }
+
+    static async getById(id) {
+        console.log('https://jsonplaceholder.typicode.com/posts/' + id)
+        return await axios.get('https://jsonplaceholder.typicode.com/posts/' + id );
+    }
 }
